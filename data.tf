@@ -1,6 +1,4 @@
-
-data "aws_ami" "ami_info" {
-
+data "aws_ami" "joindevops" {
   most_recent = true
   owners      = ["973714476881"]
 
@@ -19,3 +17,25 @@ data "aws_ami" "ami_info" {
     values = ["hvm"]
   }
 }
+
+
+# data "aws_ami" "ami_info" {
+
+#   most_recent = true
+#   owners      = ["973714476881"]
+
+#   filter {
+#     name   = "name"
+#     values = ["RHEL-9-DevOps-Practice"]
+#   }
+
+#   filter {
+#     name   = "root-device-type"
+#     values = ["ebs"]
+#   }
+
+#   filter {
+#     name   = "virtualization-type"
+#     values = ["hvm"]
+#   }
+# }
